@@ -1,0 +1,36 @@
+// $FontTitle
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&display=swap');
+// font-family: 'Fira Sans', sans-serif;
+
+// $FontText
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Roman.eot');
+  src: url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Roman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Roman/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Medium.eot');
+  src: local('HelveticaNeueCyr-Medium'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Medium/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Medium/HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Medium/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Bold.eot');
+  src: local('HelveticaNeueCyr-Bold'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Bold/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Bold/HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr/HelveticaNueCyr-Bold/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
