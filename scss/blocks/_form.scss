@@ -1,0 +1,154 @@
+.form {
+  padding: 150px 145px 150px 145px;
+  background: url('../img/blocks/form/form-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width:1250px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width:900px) {
+    align-items: stretch;
+  }
+
+  .form__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__block_1 {
+    @media (max-width:1250px) {
+      margin: 0px 0px 40px 0px;
+    }
+
+    .form__title {
+      width: 710px;
+      margin: 0px 0px 64px 0px;
+
+      @media (max-width:900px) {
+        width: 100%;
+      }
+    }
+
+    .form__text {
+      font-family: $FontTitle;
+      width: 705px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+
+      @media (max-width:900px) {
+        width: 100%;
+      }
+
+      @media (max-width:500px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .form__block_2 {
+    width: 100%;
+
+    .form__inputs {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 270px 270px;
+      grid-template-rows: 48px 48px;
+      grid-gap: 20px;
+
+      @media (max-width:1250px) {
+        $The50persMinusGap: calc(50% - 10px);
+        grid-template-columns: $The50persMinusGap $The50persMinusGap;
+      }
+
+      @media (max-width:900px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+
+      .form__input {
+        width: 100%;
+      }
+
+      .form__select {}
+    }
+
+    .form__input,
+    .form__select,
+    .form__textarea {
+      font-family: $FontText;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid $gold;
+      box-sizing: border-box;
+      backdrop-filter: blur(20px);
+      border-radius: 8px;
+      padding: 14px 24px 10px 24px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      outline: none;
+
+      @media (max-width:500px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      &::placeholder {
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (max-width:500px) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+    }
+
+    .form__textarea {
+      margin: 20px 0px 20px 0px;
+      width: 100%;
+      resize: none;
+      width: 560px;
+      height: 103px;
+
+      @media (max-width:1250px) {
+        width: 100%
+      }
+    }
+
+    button.form__button {
+      padding: 14px 32px 14px 32px;
+      background: $white;
+      border: 2px solid $gold;
+      box-sizing: border-box;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+
+      @media (max-width:500px) {
+        padding: 8px 24px 8px 24px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      &:hover {
+        background: $Line-gray;
+      }
+    }
+  }
+}

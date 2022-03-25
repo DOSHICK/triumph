@@ -1,0 +1,65 @@
+// scss/pages/main.scss
+
+@import "../base/base-main";
+
+@import "../blocks/breadcrumbs";
+@import "../blocks/form";
+@import "../blocks/videos";
+
+
+.offer {
+  background: url('../img/consultation/offer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  min-height: 900px;
+  padding: 0px 0px 40px 0px;
+
+  .header {
+    .header__phone {
+      .header__phone-link {
+        color: $white;
+      }
+
+      .header__phone-time {
+        color: $gold;
+      }
+    }
+  }
+
+  .form {
+    padding: 0px 50px 0px 50px;
+    background: none;
+    margin: 200px auto 0px;
+
+    @media (max-width:1400px) {
+      .form__block {
+        max-width: 550px;
+
+        .form__title {
+          width: 100%;
+          margin-bottom: 32px;
+        }
+
+        .form__text {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width:1250px) {
+      margin: 50px auto 0px;
+      .form__block{
+        max-width: none;
+      }
+    }
+    @media (max-width: 1000px) {
+      padding: 0px 30px 0px 30px;
+    }
+  
+    @media (max-width: 500px) {
+      padding: 0px 16px 0px 16px;
+    }
+  }
+}

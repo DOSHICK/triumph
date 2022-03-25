@@ -12,11 +12,10 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__wrapper container">
+      <div class="header__wrapper container-wide">
         <div class="header__block header__block_1">
-          <button class="header__burger-btn">
-            <img src="../img/base/icon-burger-closed.svg" alt="" class="header__burger-img header__burger-img_active">
-            <img src="../img/base/icon-burger-opened.svg" alt="" class="header__burger-img">
+          <button class="header__burger-btn" id="burger-btn">
+            <span></span>
           </button>
           <a href="#" class="header__logo-link">
             <img src="../img/base/logo.svg" alt="Triumph" class="header__logo-img">
@@ -33,22 +32,67 @@
           </div>
         </div>
       </div>
-      <div class="burger">
-        <div class="burger__body">
+      <div class="burger" id="header-burger">
+        <div class="burger__wrapper container">
           <nav class="burger__nav">
             <ul class="burger__nav-list">
               <li class="burger__nav-item">
-                <a href="#" class="burger__nav__link">Главная</a>
+                <a href="#" class="burger__nav__link current">Главная</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Услуги и цены</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Физическим лицам</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Юридическим лицам</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">FAQ</a>
+              </li>
+            </ul>
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item">
+                <a href="./consultation.html" class="burger__nav__link">Консультация</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Юридическая помощь</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Журналистские расследования</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Контакты</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#" class="burger__nav__link">Отзывы</a>
               </li>
             </ul>
           </nav>
-        </div>
-        <div class="burger__footer">
+          <div class="burger__footer">
+            <div class="burger__location">
+              <span class="burger__adress">
+                г. Санкт-Петербург, ул. Малая Морская,</br>д. 11, Бизнес центр «Дом Шретера»
+              </span>
+              <a href="#" class="burger__map-link">Смотреть на карте</a>
+            </div>
+            <div class="burger__socials">
+              <span class="burger__socials-description">Мы в соц. сетях:</span>
+              <a href="#" class="burger__socials-link"><img src="../img/base/vk.svg" alt=""></a>
+              <a href="#" class="burger__socials-link"><img src="../img/base/instagram.svg" alt=""></a>
+            </div>
+            <div class="header__phone">
+              <a class="header__phone-link" href="tel:+79219158163">+7 (921) 915-81-63</a>
+              <span class="header__phone-time">Круглосуточно</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
   </div>
   <script src="../js/main.js"></script>
+  <script src="../js/burger.js"></script>
 </body>
 
 </html>
