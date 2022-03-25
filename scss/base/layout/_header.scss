@@ -1,6 +1,12 @@
 .header {
   padding: 22px 0px 9px 0px;
 
+  &.burger-visible {
+    background: $white;
+    height: 100vh;
+    padding: 22px 0px 40px 0px;
+  }
+
   .header__wrapper {
     display: flex;
     flex-direction: row;
@@ -14,17 +20,99 @@
     }
 
     .header__block_1 {
+
+      @media (max-width:700px) {
+        width: 100%;
+      }
+
       button.header__burger-btn {
-        background: none;
+        width: 48px;
+        height: 48px;
+        position: relative;
         border: none;
+        background: $btns-bg;
+        border-radius: 4px;
+
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
-        .header__burger-img {
-          display: none;
+        @media (max-width:500px) {
+          width: 32px;
+          height: 32px;
+        }
 
-          &_active {
-            display: block;
+        // Создание полос бургера
+        span {
+          position: absolute;
+          background: $burgundy;
+          width: 16px;
+          height: 4px;
+          left: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 2px;
+          transition: all 0.3s ease 0s;
+
+          @media (max-width:500px) {
+            left: 8px;
+            width: 12px;
+            height: 3px;
+          }
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: $burgundy;
+            border-radius: 2px;
+            width: 24px;
+            height: 4px;
+
+            @media (max-width:500px) {
+              width: 16px;
+              height: 3px;
+            }
+          }
+
+          &::before {
+            top: -7px;
+            transition: all 0.3s ease 0s;
+
+            @media (max-width:500px) {
+              top: -5px;
+            }
+          }
+
+          &::after {
+            transition: all 0.3s ease 0s;
+            top: 7px;
+
+            @media (max-width:500px) {
+              top: 5px;
+            }
+          }
+        }
+
+        &.header__burger_active {
+          transition: all 0.3s ease 0s;
+          background: $burgundy;
+
+          span {
+            transform: rotate(45deg) translateY(-50%) translateX(-10%);
+            background: $gold;
+
+            &::before {
+              top: 0;
+              transform: rotate(90deg);
+              background: $gold;
+            }
+
+            &::after {
+              top: 0px;
+              transform: rotate(180deg);
+              background: $gold;
+            }
           }
         }
       }
@@ -32,37 +120,43 @@
       .header__logo-link {
         margin: 0px 0px 0px 100px;
 
-        img.header__logo-img {}
+        @media (max-width:800px) {
+          margin: 0px 0px 0px 50px;
+        }
+
+        @media (max-width:700px) {
+          margin: 0 auto;
+        }
+
+
+        img.header__logo-img {
+          width: 195px;
+          height: 70px;
+
+          @media (max-width:550px) {
+            width: 150px;
+            height: 54px;
+          }
+
+          @media (max-width:450px) {
+            width: 120px;
+            height: 32px;
+          }
+        }
       }
     }
 
     .header__block_2 {
       .header__phone {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 65px 0px 0px;
+        @include header__phone();
 
-        &-link {
-          font-family: $FontTitle;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 24px;
-          color: $burgundy;
-        }
-
-        &-time {
-          margin: 4px 0px 0px 0px;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 12px;
-          text-align: right;
-          letter-spacing: 0.05em;
-          text-transform: uppercase;
+        @media (max-width:700px) {
+          display: none;
         }
       }
 
       .header__lang-select {
-        padding: 8px 16px 8px 8px;
+        padding: 8px 8px 8px 8px;
         height: 40px;
         display: flex;
         flex-direction: row;
@@ -72,17 +166,33 @@
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
-        &:hover{
+
+        &:hover {
           background: #c0c0c060;
         }
 
         &-img {
           margin: 0px 8px 0px 0px;
+          width: 24px;
+          height: 24px;
+          @media (max-width:550px){
+            width: 16px;
+            height: 16px;
+          }
         }
 
-        &-text {}
+        &-text {
+          font-size: 14px;
+          line-height: 14px;
+
+          @media (max-width:550px) {
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
       }
     }
   }
 
+  @import "./burger";
 }
