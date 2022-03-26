@@ -4,5 +4,4 @@ header__phone -mixin (header )
 
 todo
  Вернуться к main
- form сделать адаптив
- 
+ videos подчинить bg
