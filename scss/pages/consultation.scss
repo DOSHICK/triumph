@@ -29,13 +29,16 @@
   }
 
   .form {
-    padding-top: 0px;
+    padding-top: 0;
     background: none;
-    margin: 200px auto 0px;
+    margin-top: 200px;
 
     @media (max-width:1400px) {
+      flex-direction: column;
+      align-items: center;
+
       .form__block {
-        max-width: 550px;
+        width: 100%;
 
         .form__title {
           width: 100%;
@@ -46,20 +49,45 @@
           width: 100%;
         }
       }
+      .form__inputs{
+        margin: 30px 0px 0px 0px;
+        $The50persMinusGap: calc(50% - 10px);
+        grid-template-columns: $The50persMinusGap $The50persMinusGap;
+        width: 100%;
+      }
     }
 
     @media (max-width:1250px) {
       margin: 50px auto 0px;
-      .form__block{
+
+      .form__block {
         max-width: none;
       }
+      .form__inputs{
+        margin: 0px 0px 0px 0px;}
     }
+
     @media (max-width: 1000px) {
       .form__block {
         max-width: none;
         width: 100%;
       }
     }
-    
+
+    @media (max-width: 500px) {
+      padding: 0px 16px 0px 16px;
+    }
+  }
+
+  .form__block_1 {
+    width: auto;
+
+    .form__title {
+      width: auto;
+    }
+
+    .form__text {
+      width: auto;
+    }
   }
 }
