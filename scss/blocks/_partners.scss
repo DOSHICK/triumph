@@ -1,17 +1,23 @@
 .partners {
-  @include scrolled-slider;
-  min-height: 230px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   z-index: 1;
   background: #F5F5F5;
   padding-top: 80px;
   padding-bottom: 82px;
-  @media (max-width:500px){
-    padding-top: 40px;
-  padding-bottom: 32px;
+
+  .partners__wrapper {
+    @include scrolled-slider;
+    min-height: 230px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+
+
+    @media (max-width:500px) {
+      padding-top: 40px;
+      padding-bottom: 32px;
+    }
   }
 
   .partners__title {
@@ -45,7 +51,7 @@
 
     .partners__item {
       display: inline-block;
-      width: 15%;
+      width: 15.5%;
       min-width: 110px;
       max-height: 240px;
       margin-right: 1%;

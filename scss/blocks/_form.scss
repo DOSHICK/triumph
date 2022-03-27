@@ -13,8 +13,11 @@
     align-items: center;
   }
 
-  @media (max-width:900px) {
-    align-items: stretch;
+  // @media (max-width:900px) {
+  //   align-items: stretch;
+  // }
+  @media (max-width:900px){
+    padding: 0px 20px 0px 20px;
   }
 
   .form__block {

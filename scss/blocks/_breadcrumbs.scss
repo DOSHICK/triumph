@@ -1,5 +1,10 @@
 .breadcrumbs {
   margin-top: 70px;
+
+  @media (max-width:900px) {
+    margin-top: 50px;
+  }
+
   a.breadcrumbs__link {
     padding: 0px 48px 0px 24px;
     color: $light-gray;
@@ -13,13 +18,15 @@
     background-position: right center;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    @media (max-width:500px){
+
+    @media (max-width:500px) {
       padding: 0px 27px 0px 8px;
       background-size: 18px 10px;
       font-size: 10px;
       line-height: 10px;
     }
-    &:hover{
+
+    &:hover {
       color: $dark-gray;
     }
 

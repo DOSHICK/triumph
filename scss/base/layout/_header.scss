@@ -1,22 +1,61 @@
 .header {
   padding: 22px 0px 9px 0px;
 
+  @media (max-width:900px) {
+    padding-top: 22px;
+  }
+
+  @media (max-width:500px) {
+    // padding: 20px 50px 0px 50px;
+  }
+
   &.burger-visible {
     background: $white;
     // height: 100vh;
     padding: 22px 0px 40px 0px;
+
+    @media (max-width:900px) {
+    }
+
+    .header__wrapper {
+      .header__block_2 {
+        .header__phone-link {
+          color: $burgundy;
+        }
+
+        .header__lang-select {
+          background: #FFFFFF;
+          box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.06));
+        }
+      }
+    }
   }
 
   .header__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
     .header__block {
+      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @media (max-width:900px){
+          padding: 0px 20px 0px 20px;
+        }
+        @media (max-width:700px) {
+          justify-content: center;
+        }
+      }
     }
 
     .header__block_1 {
@@ -26,9 +65,10 @@
       }
 
       button.header__burger-btn {
+        position: absolute;
+        left: -138px;
         width: 48px;
         height: 48px;
-        position: relative;
         border: none;
         background: $btns-bg;
         border-radius: 4px;
@@ -36,8 +76,18 @@
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
+        @media (max-width: 1000px) {
+          left: -100px;
+        }
+
+        @media (max-width:900px) {
+          left: unset;
+          position: relative;
+          min-width: 48px;
+        }
+
         @media (max-width:500px) {
-          width: 32px;
+          min-width: 32px;
           height: 32px;
         }
 
@@ -118,16 +168,6 @@
       }
 
       .header__logo-link {
-        margin: 0px 0px 0px 100px;
-
-        @media (max-width:800px) {
-          margin: 0px 0px 0px 50px;
-        }
-
-        @media (max-width:700px) {
-          margin: 0 auto;
-        }
-
 
         img.header__logo-img {
           width: 195px;
@@ -147,15 +187,22 @@
     }
 
     .header__block_2 {
+      position: relative;
+
       .header__phone {
         @include header__phone();
 
         @media (max-width:700px) {
           display: none;
         }
+
+        margin: 0;
       }
 
       .header__lang-select {
+        position: absolute;
+        right: -68px;
+        transform: translateX(100%);
         padding: 8px 8px 8px 8px;
         height: 40px;
         display: flex;
@@ -167,6 +214,16 @@
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
+        @media (max-width: 1000px) {
+          right: -30px;
+        }
+
+        @media (max-width:900px) {
+          right: unset;
+          position: relative;
+          transform: translateX(0);
+        }
+
         &:hover {
           background: #c0c0c060;
         }
@@ -175,7 +232,8 @@
           margin: 0px 8px 0px 0px;
           width: 24px;
           height: 24px;
-          @media (max-width:550px){
+
+          @media (max-width:550px) {
             width: 16px;
             height: 16px;
           }
@@ -193,6 +251,8 @@
       }
     }
   }
+
+
 
   @import "./burger";
 }
