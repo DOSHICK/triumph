@@ -1163,7 +1163,6 @@ h3 {
 }
 
 .form .form__block_2 .form__inputs {
-  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 270px 270px;
@@ -1177,6 +1176,7 @@ h3 {
   .form .form__block_2 .form__inputs {
     -ms-grid-columns: calc(50% - 10px) calc(50% - 10px);
         grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    width: 100%;
   }
 }
 
