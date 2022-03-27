@@ -8,13 +8,15 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width:1250px) {
+  @media (max-width:1400px) {
     flex-direction: column;
     align-items: center;
   }
 
   @media (max-width:900px){
-    padding: 0px 20px 0px 20px;
+    // padding: 0px 20px 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .form__block {
@@ -24,12 +26,12 @@
   }
 
   .form__block_1 {
-    @media (max-width:1250px) {
+    @media (max-width:1400px) {
       margin: 0px 0px 40px 0px;
     }
 
     .form__title {
-      width: 710px;
+      // width: 710px;
       margin: 0px 0px 64px 0px;
 
       @media (max-width:900px) {
@@ -39,7 +41,7 @@
 
     .form__text {
       font-family: $FontTitle;
-      width: 705px;
+      // width: 705px;
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
@@ -64,7 +66,7 @@
       grid-template-rows: 48px 48px;
       grid-gap: 20px;
 
-      @media (max-width:1250px) {
+      @media (max-width:1400px) {
         $The50persMinusGap: calc(50% - 10px);
         grid-template-columns: $The50persMinusGap $The50persMinusGap;
         width: 100%;
