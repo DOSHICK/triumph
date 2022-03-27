@@ -73,6 +73,8 @@
       width: 100%;
       border-top: 2px solid #DEDEDE;
       transition: all 0.3s ease 0s;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
 
       &.active {
         border-top: 2px solid #ffffff;
