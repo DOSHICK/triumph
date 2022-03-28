@@ -1608,6 +1608,7 @@ h3 {
 }
 
 .reply .reply__btn {
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1621,6 +1622,7 @@ h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
+  color: #383838;
 }
 
 @media (max-width: 500px) {
