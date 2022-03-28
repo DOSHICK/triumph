@@ -14,8 +14,7 @@
     // height: 100vh;
     padding: 22px 0px 40px 0px;
 
-    @media (max-width:900px) {
-    }
+    @media (max-width:900px) {}
 
     .header__wrapper {
       .header__block_2 {
@@ -49,9 +48,11 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        @media (max-width:900px){
+
+        @media (max-width:900px) {
           padding: 0px 20px 0px 20px;
         }
+
         @media (max-width:700px) {
           justify-content: center;
         }
@@ -66,23 +67,32 @@
 
       button.header__burger-btn {
         position: absolute;
-        left: -138px;
+        left: -52px;
         width: 48px;
         height: 48px;
         border: none;
         background: $btns-bg;
         border-radius: 4px;
-
+        transform: translateX(-100%);
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
-        @media (max-width: 1000px) {
-          left: -100px;
+        @media (max-width:1500px) {
+          left: -20px;
+        }
+
+        @media (max-width:1400px) {
+          left: -10px;
+        }
+
+        @media (max-width:1000px) {
+          left: 0px;
         }
 
         @media (max-width:900px) {
           left: unset;
           position: relative;
+          transform: none;
           min-width: 48px;
         }
 
@@ -201,7 +211,7 @@
 
       .header__lang-select {
         position: absolute;
-        right: -68px;
+        right: -52px;
         transform: translateX(100%);
         padding: 8px 8px 8px 8px;
         height: 40px;
@@ -214,8 +224,12 @@
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
-        @media (max-width: 1000px) {
-          right: -30px;
+        @media (max-width:1500px) {
+          right: -20px;
+        }
+
+        @media (max-width:1400px) {
+          right: 0px;
         }
 
         @media (max-width:900px) {

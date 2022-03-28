@@ -1,0 +1,210 @@
+@import "../base/base-main";
+
+@import "../blocks/breadcrumbs";
+@import "../blocks/services-comp";
+@import "../blocks/license";
+@import "../blocks/check__review";
+@import "../blocks/form";
+@import "../blocks/videos";
+@import "../blocks/partners";
+
+.offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 130px;
+
+  @media (max-width:1200px) {
+    padding-top: 60px;
+    padding-bottom: 1000px;
+  }
+
+  @media (max-width:900px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width:500px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .offer__wrapper {
+    @media (max-width:1200px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .offer__block {
+      max-width: 560px;
+
+      @media (max-width:1200px) {
+        max-width: none;
+      }
+
+      .offer__title {
+        color: $burgundy;
+
+        @media (max-width:500px) {
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+
+      .offer__description {
+        font-family: $FontTitle;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 32px 0px 56px 0px;
+
+        @media (max-width:1200px) {
+          margin: 8px 0px 0px 0px;
+        }
+
+        @media (max-width:500px) {
+          font-weight: 800;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .offer__img {
+      display: none;
+
+      @media (max-width:1200px) {
+        display: block;
+        margin: 20px 0px 20px 0px;
+      }
+
+      @media (max-width:900px) {
+        width: 400px;
+        height: 280px;
+      }
+
+      @media (max-width:600px) {
+        width: 350px;
+        height: 250px;
+      }
+
+      @media (max-width:400px) {
+        width: 288px;
+        height: 206px;
+      }
+    }
+
+    .offer__pricing {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: #FFF9EA;
+      border-radius: 16px;
+      padding: 32px 48px 32px 48px;
+
+      @media (max-width:1200px) {
+        width: 100%;
+      }
+
+      @media (max-width:600px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .offer__pricing-block {
+        @media (max-width:600px) {
+          text-align: center;
+        }
+
+        .offer__pricing-title {
+          font-family: $FontTitle;
+          margin: 0px 0px 8px 0px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .offer__pricing-cost {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 24px;
+          color: $burgundy;
+        }
+      }
+
+      .offer__pricing-btn {
+        width: fit-content;
+        font-family: $FontTitle;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 14px 32px;
+        background: #FFFFFF;
+        border: 2px solid #D2A951;
+        box-sizing: border-box;
+        border-radius: 25px;
+        color: $dark-gray;
+
+        @media (max-width:600px) {
+          margin: 16px 0px 0px 0px;
+        }
+
+        @media (max-width:500px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  .offer__img {
+    width: 630px;
+    height: 440px;
+
+    @media (max-width:1500px) {
+      width: 500px;
+      height: 350px;
+    }
+
+    @media (max-width:1400px) {
+      width: 400px;
+      height: 280px;
+    }
+
+    @media (max-width:1200px) {
+      display: none;
+      width: 630px;
+      height: 440px;
+    }
+  }
+}
+
+.description {
+  padding: 0;
+  padding-top: 80px;
+  background: url('../img/services__inner/description_bg.svg');
+  background-repeat: no-repeat;
+
+  @media (max-width:700px) {
+    background: none;
+    padding-top: 40px;
+  }
+
+  .description__wrapper {
+    p {
+      margin: 0px 0px 24px 0px;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (max-width:500px) {
+        margin: 0px 0px 16px 0px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}

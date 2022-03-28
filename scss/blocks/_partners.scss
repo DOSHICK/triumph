@@ -4,6 +4,11 @@
   padding-top: 80px;
   padding-bottom: 82px;
 
+  @media (max-width:600px) {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
   .partners__wrapper {
     @include scrolled-slider;
     min-height: 230px;
@@ -42,10 +47,6 @@
     padding: 0px 0px 40px 0px;
 
     @media (max-width:800px) {
-      padding: 0px 0px 30px 0px;
-    }
-
-    @media (max-width:500px) {
       padding: 0px 0px 16px 0px;
     }
 

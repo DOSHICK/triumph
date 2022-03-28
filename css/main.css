@@ -131,14 +131,26 @@ body {
 }
 
 .container {
-  max-width: 1530px;
-  padding: 0px 158px 0px 158px;
+  max-width: 1746px;
   margin: 0 auto;
+  padding: 0px 158px 0px 158px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
   .container {
     padding: 0px 130px 0px 130px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 0px 80px 0px 80px;
   }
 }
 
@@ -307,20 +319,34 @@ h3 {
 
 .header .header__wrapper .header__block_1 button.header__burger-btn {
   position: absolute;
-  left: -138px;
+  left: -52px;
   width: 48px;
   height: 48px;
   border: none;
   background: #E9E9E9;
   border-radius: 4px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
+@media (max-width: 1500px) {
+  .header .header__wrapper .header__block_1 button.header__burger-btn {
+    left: -20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header .header__wrapper .header__block_1 button.header__burger-btn {
+    left: -10px;
+  }
+}
+
 @media (max-width: 1000px) {
   .header .header__wrapper .header__block_1 button.header__burger-btn {
-    left: -100px;
+    left: 0px;
   }
 }
 
@@ -328,6 +354,8 @@ h3 {
   .header .header__wrapper .header__block_1 button.header__burger-btn {
     left: unset;
     position: relative;
+    -webkit-transform: none;
+            transform: none;
     min-width: 48px;
   }
 }
@@ -501,7 +529,7 @@ h3 {
 
 .header .header__wrapper .header__block_2 .header__lang-select {
   position: absolute;
-  right: -68px;
+  right: -52px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   padding: 8px 8px 8px 8px;
@@ -526,9 +554,15 @@ h3 {
   transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .header .header__wrapper .header__block_2 .header__lang-select {
-    right: -30px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header .header__wrapper .header__block_2 .header__lang-select {
+    right: 0px;
   }
 }
 
