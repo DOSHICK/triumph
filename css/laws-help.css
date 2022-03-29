@@ -2052,6 +2052,7 @@ h3 {
 
 .offer .offer__wrapper .offer__img {
   position: absolute;
+  top: 0;
   right: 60px;
   width: 560px;
   height: 646px;
