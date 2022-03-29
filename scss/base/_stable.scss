@@ -10,23 +10,8 @@ body {
   height: 100%;
 }
 
-.container-wide {
-  width: 100%;
-  padding: 0px 50px 0px 50px;
-  margin: 0 auto;
-
-  @media (max-width: 1000px) {
-    padding: 0px 30px 0px 30px;
-  }
-
-  @media (max-width: 500px) {
-    padding: 0px 16px 0px 16px;
-  }
-}
-
 .container {
   max-width: 1746px;
-  
   margin: 0 auto;
   padding: 0px 158px 0px 158px;
 
@@ -50,6 +35,41 @@ body {
     padding: 0px 16px 0px 16px;
   }
 }
+
+.container-wide {
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    padding: 0px 30px 0px 30px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 16px 0px 16px;
+  }
+}
+.container-small {
+  max-width: 1200px;
+  padding: 0px 32px 0px 32px;
+  margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    padding: 0px 80px 0px 80px;
+  }
+
+  @media (max-width:900px) {
+    padding: 0px 20px 0px 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 16px 0px 16px;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 16px 0px 16px;
+  }
+}
+
 
 h1,
 h2,
