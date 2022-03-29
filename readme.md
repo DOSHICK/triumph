@@ -6,4 +6,4 @@ todo
  Вернуться к main
  videos подчинить bg
  form textarea fix placeholder
- laws-help offer
+ сделать в offer services_inner, как laws-help 
