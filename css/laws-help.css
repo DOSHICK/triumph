@@ -2005,7 +2005,7 @@ h3 {
 
 .offer .offer__wrapper .offer__block .offer__title {
   color: #830505;
-  max-width: 560px;
+  max-width: 705px;
 }
 
 @media (max-width: 1050px) {
@@ -2027,7 +2027,13 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   margin: 32px 0px 56px 0px;
-  max-width: 560px;
+  max-width: 705px;
+}
+
+@media (max-width: 1400px) {
+  .offer .offer__wrapper .offer__block .offer__description {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 1200px) {

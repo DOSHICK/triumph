@@ -42,7 +42,7 @@
 
       .offer__title {
         color: $burgundy;
-        max-width: 560px;
+        max-width: 705px;
 
         @media (max-width:1050px) {
           max-width: none;
@@ -60,7 +60,10 @@
         font-size: 20px;
         line-height: 28px;
         margin: 32px 0px 56px 0px;
-        max-width: 560px;
+        max-width: 705px;
+        @media (max-width:1400px){
+          max-width: 500px;
+        }
 
         @media (max-width:1200px) {
           margin: 8px 0px 0px 0px;
