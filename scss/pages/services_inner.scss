@@ -19,7 +19,7 @@
     padding-top: 80px;
     padding-bottom: 130px;
 
-    @media (max-width:1150px) {
+    @media (max-width:1050px) {
       width: 100%;
       align-items: center;
     }
@@ -64,7 +64,7 @@
           max-width: 500px;
         }
 
-        @media (max-width:1200px) {
+        @media (max-width:1050px) {
           margin: 8px 0px 0px 0px;
         }
 
@@ -133,6 +133,10 @@
         align-items: center;
       }
 
+      @media (max-width:500px) {
+        padding: 24px 56px 24px 56px;
+      }
+
       .offer__pricing-block {
         @media (max-width:600px) {
           text-align: center;
@@ -145,6 +149,11 @@
           font-weight: 600;
           font-size: 14px;
           line-height: 17px;
+
+          @media (max-width:500px) {
+            font-size: 12px;
+            line-height: 14px;
+          }
         }
 
         .offer__pricing-cost {
@@ -152,6 +161,11 @@
           font-size: 24px;
           line-height: 24px;
           color: $burgundy;
+
+          @media (max-width:500px) {
+            font-size: 24px;
+            line-height: 24px;
+          }
         }
       }
 
@@ -174,6 +188,7 @@
         }
 
         @media (max-width:500px) {
+          padding: 14px 25px;
           font-size: 14px;
           line-height: 17px;
         }

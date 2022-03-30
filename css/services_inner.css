@@ -2243,7 +2243,7 @@ h3 {
   padding-bottom: 130px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1050px) {
   .offer .offer__wrapper {
     width: 100%;
     -webkit-box-align: center;
@@ -2304,7 +2304,7 @@ h3 {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
   .offer .offer__wrapper .offer__block .offer__description {
     margin: 8px 0px 0px 0px;
   }
@@ -2405,6 +2405,12 @@ h3 {
   }
 }
 
+@media (max-width: 500px) {
+  .offer .offer__wrapper .offer__pricing {
+    padding: 24px 56px 24px 56px;
+  }
+}
+
 @media (max-width: 600px) {
   .offer .offer__wrapper .offer__pricing .offer__pricing-block {
     text-align: center;
@@ -2419,11 +2425,25 @@ h3 {
   line-height: 17px;
 }
 
+@media (max-width: 500px) {
+  .offer .offer__wrapper .offer__pricing .offer__pricing-block .offer__pricing-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
 .offer .offer__wrapper .offer__pricing .offer__pricing-block .offer__pricing-cost {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: #830505;
+}
+
+@media (max-width: 500px) {
+  .offer .offer__wrapper .offer__pricing .offer__pricing-block .offer__pricing-cost {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .offer .offer__wrapper .offer__pricing .offer__pricing-btn {
@@ -2452,6 +2472,7 @@ h3 {
 
 @media (max-width: 500px) {
   .offer .offer__wrapper .offer__pricing .offer__pricing-btn {
+    padding: 14px 25px;
     font-size: 14px;
     line-height: 17px;
   }
