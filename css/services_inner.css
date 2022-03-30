@@ -2227,66 +2227,45 @@ h3 {
   height: 100%;
 }
 
-.offer {
+.offer .offer__wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 80px;
   padding-bottom: 130px;
 }
 
-@media (max-width: 1200px) {
-  .offer {
-    padding-top: 60px;
-    padding-bottom: 100px;
-  }
-}
-
-@media (max-width: 900px) {
-  .offer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 500px) {
-  .offer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
   .offer .offer__wrapper {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-.offer .offer__wrapper .offer__block {
-  max-width: 560px;
+@media (max-width: 900px) {
+  .offer .offer__wrapper {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
-@media (max-width: 1200px) {
+.offer .offer__wrapper .offer__block {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 1150px) {
   .offer .offer__wrapper .offer__block {
     max-width: none;
   }
@@ -2294,6 +2273,13 @@ h3 {
 
 .offer .offer__wrapper .offer__block .offer__title {
   color: #830505;
+  max-width: 705px;
+}
+
+@media (max-width: 1050px) {
+  .offer .offer__wrapper .offer__block .offer__title {
+    max-width: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2309,11 +2295,24 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   margin: 32px 0px 56px 0px;
+  max-width: 705px;
+}
+
+@media (max-width: 1400px) {
+  .offer .offer__wrapper .offer__block .offer__description {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 1200px) {
   .offer .offer__wrapper .offer__block .offer__description {
     margin: 8px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .offer .offer__wrapper .offer__block .offer__description {
+    max-width: none;
   }
 }
 
@@ -2326,34 +2325,46 @@ h3 {
 }
 
 .offer .offer__wrapper .offer__img {
-  display: none;
+  position: absolute;
+  right: 60px;
+  width: 616px;
+  height: 441px;
+}
+
+@media (max-width: 1300px) {
+  .offer .offer__wrapper .offer__img {
+    width: 500px;
+    height: 358px;
+  }
 }
 
 @media (max-width: 1200px) {
   .offer .offer__wrapper .offer__img {
-    display: block;
-    margin: 20px 0px 20px 0px;
+    width: 450px;
+    height: 322px;
   }
 }
 
-@media (max-width: 900px) {
-  .offer .offer__wrapper .offer__img {
-    width: 400px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 1150px) {
   .offer .offer__wrapper .offer__img {
     width: 350px;
     height: 250px;
   }
 }
 
+@media (max-width: 1050px) {
+  .offer .offer__wrapper .offer__img {
+    position: relative;
+    right: auto;
+    display: block;
+    margin: 24px auto 16px;
+  }
+}
+
 @media (max-width: 400px) {
   .offer .offer__wrapper .offer__img {
     width: 288px;
-    height: 206px;
+    height: 206.18px;
   }
 }
 
@@ -2371,9 +2382,12 @@ h3 {
   background: #FFF9EA;
   border-radius: 16px;
   padding: 32px 48px 32px 48px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 700px) {
   .offer .offer__wrapper .offer__pricing {
     width: 100%;
   }
@@ -2413,6 +2427,7 @@ h3 {
 }
 
 .offer .offer__wrapper .offer__pricing .offer__pricing-btn {
+  margin: 0px 0px 0px 110px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2439,33 +2454,6 @@ h3 {
   .offer .offer__wrapper .offer__pricing .offer__pricing-btn {
     font-size: 14px;
     line-height: 17px;
-  }
-}
-
-.offer .offer__img {
-  width: 630px;
-  height: 440px;
-}
-
-@media (max-width: 1500px) {
-  .offer .offer__img {
-    width: 500px;
-    height: 350px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .offer .offer__img {
-    width: 400px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .offer .offer__img {
-    display: none;
-    width: 630px;
-    height: 440px;
   }
 }
 
