@@ -1783,6 +1783,11 @@ h3 {
   height: 100%;
 }
 
+.offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .offer .offer__block {
   position: relative;
 }
@@ -1790,6 +1795,7 @@ h3 {
 .offer .offer__block .offer__title {
   max-width: 705px;
   color: #981717;
+  margin: 0px 0px 36px 0px;
 }
 
 @media (max-width: 1170px) {
@@ -1816,17 +1822,19 @@ h3 {
 }
 
 .offer .offer__block .offer__list {
-  padding: 0px 0px 0px 20px;
+  padding: 60px 0px 0px 20px;
   max-width: 705px;
 }
 
 @media (max-width: 1170px) {
   .offer .offer__block .offer__list {
     max-width: unset;
+    padding: 20px 0px 0px 20px;
   }
 }
 
 .offer .offer__block .offer__list .offer__item {
+  margin: 0px 0px 24px 0px;
   list-style-type: disc;
   font-size: 16px;
   line-height: 24px;
@@ -1836,6 +1844,7 @@ h3 {
   .offer .offer__block .offer__list .offer__item {
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1903,7 +1912,7 @@ h3 {
 }
 
 .opportunity {
-  padding: 50px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
   position: relative;
 }
 
@@ -2201,6 +2210,7 @@ h3 {
 
 .more .more__title {
   color: #981717;
+  margin: 0px 0px 40px 0px;
 }
 
 .more .more__list {
@@ -2209,6 +2219,7 @@ h3 {
 
 .more .more__list .more__item {
   list-style-type: disc;
+  margin: 0px 0px 24px 0px;
 }
 
 .more .more__list .more__item a {

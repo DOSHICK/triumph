@@ -8,13 +8,15 @@
 
 
 .offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   .offer__block {
     position: relative;
 
     .offer__title {
       max-width: 705px;
       color: #981717;
-
+      margin: 0px 0px 36px 0px;
       @media (max-width:1170px) {
         max-width: unset;
       }
@@ -34,15 +36,17 @@
     }
 
     .offer__list {
-      padding: 0px 0px 0px 20px;
+      padding: 60px 0px 0px 20px;
       max-width: 705px;
 
       @media (max-width:1170px) {
         max-width: unset;
+        padding: 20px 0px 0px 20px;
       }
 
 
       .offer__item {
+        margin: 0px 0px 24px 0px;
         list-style-type: disc;
         font-size: 16px;
         line-height: 24px;
@@ -50,6 +54,7 @@
         @media (max-width:500px) {
           font-size: 12px;
           line-height: 18px;
+          margin-bottom: 12px;
         }
 
         &::marker {
@@ -107,7 +112,7 @@
 }
 
 .opportunity {
-  padding: 50px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
   position: relative;
 
   .opportunity__title {
@@ -354,6 +359,7 @@
 .more {
   .more__title {
     color: #981717;
+    margin: 0px 0px 40px 0px;
   }
 
   .more__list {
@@ -361,6 +367,7 @@
 
     .more__item {
       list-style-type: disc;
+      margin: 0px 0px 24px 0px;
 
       a {
         color: #981717;
