@@ -15,8 +15,8 @@
   min-height: 380px;
   height: 100vh;
   max-height: 820px;
+  min-height: 380px;
   padding-bottom: 50px;
-  margin-bottom: 100px;
 
   .offer__wrapper {
     width: 100%;
@@ -65,6 +65,7 @@
         margin: 16px 0px 64px 0px;
 
         @media (max-width:500px) {
+          margin: 8px 0px 16px 0px;
           font-size: 13px;
           line-height: 20px;
         }
@@ -124,6 +125,8 @@
   }
 
   .img__block {
+    width: 100%;
+    height: 100%;
     z-index: -1;
     position: absolute;
     top: 0;
@@ -144,13 +147,20 @@
         width: 100%;
         height: 100%;
         top: 0;
-        z-index: 0;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
       }
     }
 
     @media (max-width:500px) {
-      div {}
+      img {
+        display: none;
+      }
+
+      div {
+        background: url('../img/main/offer__img-320.png');
+        background-size: cover;
+        display: block;
+      }
     }
 
     .offer__bg {
@@ -163,32 +173,40 @@
 
 
 .information {
-padding-top: 150px;
-background: url('../img/main/information/information__bg_1.svg'), url('../img/main/information/information__bg_2.svg');
-background-repeat: no-repeat, no-repeat;
-background-position:  top 430px right 60px, bottom 600px left;
-@media (max-width:1450px){
-  background-position:  top 330px right 60px, bottom 650px left;
-}
-@media (max-width:1330px){
-  background-position:  top 330px right 20px, bottom 650px left;
-}
-@media (max-width:1130px){
-  background-position:  top 250px right 20px, bottom 750px left;
-}
-@media (max-width:1100px){
-  background-position:  top 250px right 20px, bottom 400px left;
-}
-@media (max-width:1030px){
-  background-position:  top 400px right 20px, bottom 400px left;
-}
-@media (max-width:1000px){
-  background-position:  top 500px right -40px, bottom 500px left;
-  background-size: 114px 175px, auto;
-}
-@media (max-width:500px){
-  background-position:  top 550px right -40px, bottom 300px left;
-}
+  padding-top: 150px;
+  background: url('../img/main/information/information__bg_1.svg'), url('../img/main/information/information__bg_2.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 430px right 60px, bottom 600px left;
+
+  @media (max-width:1450px) {
+    background-position: top 330px right 60px, bottom 650px left;
+  }
+
+  @media (max-width:1330px) {
+    background-position: top 330px right 20px, bottom 650px left;
+  }
+
+  @media (max-width:1130px) {
+    background-position: top 250px right 20px, bottom 750px left;
+  }
+
+  @media (max-width:1100px) {
+    background-position: top 250px right 20px, bottom 400px left;
+  }
+
+  @media (max-width:1030px) {
+    background-position: top 400px right 20px, bottom 400px left;
+  }
+
+  @media (max-width:1000px) {
+    background-position: top 500px right -40px, bottom 500px left;
+    background-size: 114px 175px, auto;
+  }
+
+  @media (max-width:500px) {
+    background-position: top 550px right -40px, bottom 300px left;
+  }
+
   .quote {
     padding-top: 100px;
     padding-bottom: 100px;

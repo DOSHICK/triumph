@@ -2214,8 +2214,8 @@ h3 {
   min-height: 380px;
   height: 100vh;
   max-height: 820px;
+  min-height: 380px;
   padding-bottom: 50px;
-  margin-bottom: 100px;
 }
 
 .offer .offer__wrapper {
@@ -2292,6 +2292,7 @@ h3 {
 
 @media (max-width: 500px) {
   .offer .offer__wrapper .offer__block .offer__text {
+    margin: 8px 0px 16px 0px;
     font-size: 13px;
     line-height: 20px;
   }
@@ -2372,6 +2373,8 @@ h3 {
 }
 
 .offer .img__block {
+  width: 100%;
+  height: 100%;
   z-index: -1;
   position: absolute;
   top: 0;
@@ -2396,9 +2399,19 @@ h3 {
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 0;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  }
+}
+
+@media (max-width: 500px) {
+  .offer .img__block img {
+    display: none;
+  }
+  .offer .img__block div {
+    background: url("../img/main/offer__img-320.png");
+    background-size: cover;
+    display: block;
   }
 }
 

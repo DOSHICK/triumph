@@ -8,8 +8,8 @@ todo
   principals do bg
   our-services - change positions
   our-services > services__item change width
-  burger changes 
 
+  <!-- burger changes  -->
   <!-- license bg fix -->
   <!-- form change title color -->
   <!-- form change select arrow -->
