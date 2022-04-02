@@ -7,8 +7,8 @@ todo
   main. offer bg fix
   main. pluses add pink line at bg
   principals do bg
-  license bg fix
+  <!-- license bg fix -->
   <!-- form change title color -->
-  form change select arrow
+  <!-- form change select arrow -->
   videos bg 
 

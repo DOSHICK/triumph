@@ -1270,7 +1270,9 @@ h3 {
 }
 
 .license .license__bg {
+  background: #FFF9EA;
   position: absolute;
+  min-height: 130px;
   width: 100%;
   left: 0;
   bottom: 0;
