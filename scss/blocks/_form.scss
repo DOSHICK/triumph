@@ -93,7 +93,19 @@
         width: 100%;
       }
 
-      .form__select {}
+      .select__block{
+        position: relative;
+        select.form__select {
+          width: 100%;
+          appearance: none;
+        }
+        span{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+        }
+      }
     }
 
     .form__input,
@@ -126,7 +138,6 @@
           line-height: 18px;
         }
       }
-
     }
 
     .form__textarea {

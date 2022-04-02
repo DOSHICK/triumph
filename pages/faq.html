@@ -950,11 +950,14 @@
           <input class="form__input" type="text" name="name" placeholder="Как вас зовут?*" required>
           <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона">
           <input class="form__input" type="email" name="email" placeholder="Ваш e-mail" required>
-          <select class="form__select" name="servises" id="form-select">
-            <option value="" selected disabled>Вид услуги</option>
-            <option value="">Расследование</option>
-            <option value="">Расследование</option>
-          </select>
+          <div class="select__block">
+            <select class="form__select" name="servises" id="form-select">
+              <option value="" selected disabled>Вид услуги</option>
+              <option value="">Расследование</option>
+              <option value="">Расследование</option>
+            </select>
+            <span><img src="../img/blocks/form/select-arrow.svg" alt=""></span>
+          </div>
         </div>
         <textarea class="form__textarea" name="question" id="" cols="30" rows="3" placeholder="Ваш вопрос"
           required></textarea>

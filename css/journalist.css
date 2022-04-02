@@ -1388,6 +1388,25 @@ h3 {
   width: 100%;
 }
 
+.form .form__block_2 .form__inputs .select__block {
+  position: relative;
+}
+
+.form .form__block_2 .form__inputs .select__block select.form__select {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form .form__block_2 .form__inputs .select__block span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+}
+
 .form .form__block_2 .form__input,
 .form .form__block_2 .form__select,
 .form .form__block_2 .form__textarea {
