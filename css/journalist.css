@@ -677,7 +677,7 @@ h3 {
       grid-template-rows: 1fr auto;
   background: url("../img/base/burger-eagle.svg");
   background-repeat: no-repeat;
-  background-size: 515px 830px;
+  background-size: contain;
   background-position: right top;
   padding: 0px 0px 20px 0px;
 }
@@ -689,6 +689,7 @@ h3 {
 }
 
 .header .burger .burger__wrapper .burger__nav {
+  width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;

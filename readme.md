@@ -4,7 +4,7 @@ header__phone -mixin (header )
 
 todo
   header .laguage-change do select
-  main. offer bg fix
+  <!-- main. offer bg fix -->
   principals do bg
   our-services - change positions
   our-services > services__item change width
