@@ -364,16 +364,48 @@
   background-repeat: no-repeat;
   background-size: auto;
 
+  .our-services__text {
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width:1200px){
+      margin: 20px 0px 20px 0px;
+    }
+  }
+
+
+  .our-services__btn {
+    display: block;
+    width: fit-content;
+    margin: 40px 0px 0px 0px;
+    padding: 14px 32px;
+    background: #FFFFFF;
+    border: 2px solid #D2A951;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-family: $FontTitle;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-gray;
+
+    @media (max-width:1200px) {
+      margin: 40px auto 20px auto;
+    }
+  }
+
   .our-services__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 72px;
-
-    @media (max-width:700px) {
+    @media (max-width:1200px){
       align-items: flex-start;
       flex-direction: column;
+    
+    }
+    @media (max-width:700px) {
+      
       margin-bottom: 32px;
     }
 
@@ -447,31 +479,7 @@
       }
 
 
-      .our-services__text {
-        font-size: 16px;
-        line-height: 24px;
-      }
 
-
-      .our-services__btn {
-        display: block;
-        width: fit-content;
-        margin: 40px 0px 0px 0px;
-        padding: 14px 32px;
-        background: #FFFFFF;
-        border: 2px solid #D2A951;
-        box-sizing: border-box;
-        border-radius: 25px;
-        font-family: $FontTitle;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
-        color: $dark-gray;
-
-        @media (max-width:1200px) {
-          margin: 40px auto 20px auto;
-        }
-      }
     }
 
 

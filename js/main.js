@@ -12,3 +12,23 @@ function ChangeActive(){
 ChangeActive()
 
 
+function playDomPocker(){
+  if(window.innerWidth < 1200){
+    let header = document.querySelector(".our-services__header")
+    let body = document.querySelector(".our-services__body")
+    let text = document.querySelector(".our-services__text")
+    let btnsBlock = document.querySelector(".our-services__btns")
+    let btn =  document.querySelector(".our-services__btn")
+
+    header.appendChild(text)
+    header.appendChild(btnsBlock)
+
+    body.appendChild(btn)
+  }
+}
+playDomPocker()
+window.addEventListener("resize", function(){
+  playDomPocker()
+}, true);
+
+
