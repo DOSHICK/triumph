@@ -1535,6 +1535,10 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
+  background: url("../img/blocks/videos/videos-bg.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .videos ::-webkit-scrollbar {
@@ -1556,19 +1560,6 @@ h3 {
 
 .videos ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
-}
-
-.videos::before {
-  z-index: 0;
-  content: "";
-  position: absolute;
-  background: url("../img/blocks/videos/videos-bg.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .videos .videos__title {

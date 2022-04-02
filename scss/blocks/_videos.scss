@@ -7,21 +7,10 @@
   flex-direction: column;
   justify-content: center;
   z-index: 1;
-
-  &::before {
-    z-index: 0;
-    content: "";
-    position: absolute;
-    background: url('../img/blocks/videos/videos-bg.svg');
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (max-width:700px) {}
-
-    bottom: 0;
-    transform: rotate(180deg);
-  }
+  background: url('../img/blocks/videos/videos-bg.svg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
   .videos__title {
