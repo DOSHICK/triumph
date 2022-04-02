@@ -453,6 +453,9 @@
 
       .our-services__btn_phisical {
         margin: 0px 32px 0px 0px;
+        @media (max-width:500px){
+        margin: 0px 12px 0px 0px;
+        }
       }
 
       .our-services__btn_legally {}
