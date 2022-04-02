@@ -273,7 +273,12 @@ h3 {
   }
 }
 
+.none-scroll {
+  overflow: hidden;
+}
+
 .header {
+  position: relative;
   padding: 22px 0px 9px 0px;
 }
 
@@ -655,12 +660,13 @@ h3 {
 }
 
 .header .burger.active {
+  position: absolute;
   padding: 32px 0px 0px 0px;
   display: block;
-  background: url(../img/base/burger-eagle.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  overflow-y: scroll;
 }
 
 .header .burger .burger__wrapper {
@@ -669,6 +675,17 @@ h3 {
   display: grid;
   -ms-grid-rows: 1fr auto;
       grid-template-rows: 1fr auto;
+  background: url("../img/base/burger-eagle.svg");
+  background-repeat: no-repeat;
+  background-size: 515px 830px;
+  background-position: right top;
+  padding: 0px 0px 20px 0px;
+}
+
+@media (max-width: 800px) {
+  .header .burger .burger__wrapper {
+    background-size: 152px 300px;
+  }
 }
 
 .header .burger .burger__wrapper .burger__nav {

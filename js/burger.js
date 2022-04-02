@@ -2,6 +2,7 @@ let burgerBtn = document.getElementById("burger-btn");
 burgerBtn.onclick = function(){
   changeBurgerImg();
   changeBurgerVisibility();
+  changeBodyScrolling();
 }
 
 function changeBurgerImg(){
@@ -15,4 +16,9 @@ function changeBurgerVisibility(){
   // Добавление класса header'у (для залития фоном)
   let header = document.querySelector("header.header");
   header.classList.toggle("burger-visible");
+}
+
+function changeBodyScrolling(){
+  let body = document.querySelector("body")
+  body.classList.toggle("none-scroll")
 }
