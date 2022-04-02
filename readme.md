@@ -5,10 +5,10 @@ header__phone -mixin (header )
 todo
   header .laguage-change do select
   main. offer bg fix
-  main. pluses add pink line at bg
+  <!-- main. pluses add pink line at bg -->
   principals do bg
   <!-- license bg fix -->
   <!-- form change title color -->
   <!-- form change select arrow -->
   <!-- videos bg  -->
-
+  
