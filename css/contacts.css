@@ -279,6 +279,7 @@ h3 {
 
 .header {
   position: relative;
+  z-index: 10;
   padding: 22px 0px 9px 0px;
 }
 
@@ -776,7 +777,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px 0px 20px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -1425,6 +1428,10 @@ h3 {
 }
 
 .reply {
+  background: url("../img/blocks/reply/bg.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
   /* Track */
   /* Handle */
   display: -webkit-box;
@@ -1659,6 +1666,7 @@ h3 {
 
 @media (max-width: 500px) {
   .reply .license__list .license__item {
+    margin-right: 3%;
     min-width: 136px;
   }
 }

@@ -279,6 +279,7 @@ h3 {
 
 .header {
   position: relative;
+  z-index: 10;
   padding: 22px 0px 9px 0px;
 }
 
@@ -776,7 +777,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px 0px 20px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -1812,10 +1815,10 @@ h3 {
 }
 
 .offer {
-  background: url("../img/consultation/offer-bg.png");
+  background: url("../img/consultation/offer__img-line.svg"), url("../img/consultation/offer-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: 500px, cover;
+  background-position: bottom left, bottom;
   min-height: 900px;
   padding: 0px 0px 40px 0px;
 }
@@ -1825,6 +1828,10 @@ h3 {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
+    background: url("../img/consultation/offer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 

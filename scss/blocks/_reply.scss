@@ -1,4 +1,8 @@
 .reply {
+  background: url('../img/blocks/reply/bg.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
   @include scrolled-slider;
   display: flex;
   flex-direction: column;
@@ -151,6 +155,7 @@
       }
 
       @media (max-width:500px) {
+        margin-right: 3%;
         min-width: 136px;
       }
 

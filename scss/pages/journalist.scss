@@ -133,6 +133,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 250px;
+    &:last-child{
+      margin-bottom: 0;
+    }
 
     &.reversed {
       flex-direction: row-reverse;
@@ -197,13 +201,11 @@
     }
 
     .opportunity__img-block {
-      margin: 0px 0px 250px 0px;
       max-width: 850px;
       width: 59%;
 
       &.opportunity__img-block__hope {
         max-width: 520px;
-        margin: 0px 0px 0px 0px;
       }
 
       @media (max-width:1200px) {
@@ -357,6 +359,12 @@
 }
 
 .more {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url('../img/journalist/more_bg.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto;
   .more__title {
     color: #981717;
     margin: 0px 0px 40px 0px;
@@ -388,11 +396,11 @@
 }
 
 .purpose {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 
   @media (max-width:1200px) {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
 

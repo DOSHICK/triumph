@@ -279,6 +279,7 @@ h3 {
 
 .header {
   position: relative;
+  z-index: 10;
   padding: 22px 0px 9px 0px;
 }
 
@@ -776,7 +777,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px 0px 20px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -1251,6 +1254,14 @@ h3 {
 
 .breadcrumbs a.breadcrumbs__link:last-child {
   background: none;
+}
+
+.principals {
+  padding: 70px 0px 70px 0px;
+  background: url("../img/blocks/principals/principals__bg.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
 }
 
 .principals .principals__text {
@@ -1991,6 +2002,11 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 250px;
+}
+
+.opportunity .opportunity__block:last-child {
+  margin-bottom: 0;
 }
 
 .opportunity .opportunity__block.reversed {
@@ -2080,14 +2096,12 @@ h3 {
 }
 
 .opportunity .opportunity__block .opportunity__img-block {
-  margin: 0px 0px 250px 0px;
   max-width: 850px;
   width: 59%;
 }
 
 .opportunity .opportunity__block .opportunity__img-block.opportunity__img-block__hope {
   max-width: 520px;
-  margin: 0px 0px 0px 0px;
 }
 
 @media (max-width: 1200px) {
@@ -2252,6 +2266,15 @@ h3 {
   }
 }
 
+.more {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("../img/journalist/more_bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto;
+}
+
 .more .more__title {
   color: #981717;
   margin: 0px 0px 40px 0px;
@@ -2283,13 +2306,13 @@ h3 {
 }
 
 .purpose {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 @media (max-width: 1200px) {
   .purpose {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
 }

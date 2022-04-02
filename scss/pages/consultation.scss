@@ -9,14 +9,19 @@
 
 
 .offer {
-  background: url('../img/consultation/offer-bg.png');
+  background: url('../img/consultation/offer__img-line.svg'), url('../img/consultation/offer-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: 500px, cover;
+  background-position: bottom left, bottom;
   min-height: 900px;
   padding: 0px 0px 40px 0px;
-  @media (max-width:900px){
+
+  @media (max-width:900px) {
     min-height: fit-content;
+    background: url('../img/consultation/offer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 
   .header {
@@ -36,7 +41,8 @@
     background: none;
     margin-top: 200px;
     padding: 0px 158px 0px 158px;
-    .form__title{
+
+    .form__title {
       color: $white;
     }
 

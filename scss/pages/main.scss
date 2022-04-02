@@ -357,8 +357,12 @@
 }
 
 .our-services {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: url('../img/main/our-services__bg.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   .our-services__header {
     display: flex;
@@ -493,7 +497,7 @@
           display: block;
           padding: 40px 24px 40px 24px;
           max-width: 32%;
-          min-width: 212px;
+          min-width: 300px;
           margin-right: 6%;
           border: 1px solid #DEDEDE;
           border-radius: 8px;
@@ -502,6 +506,8 @@
           justify-content: space-between;
           cursor: pointer;
           transition: all 0.3s ease 0s;
+          background: #FFFFFF;
+
 
           @media (max-width:1200px) {
             min-width: 300px;
