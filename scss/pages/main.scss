@@ -440,6 +440,8 @@
       }
 
       button.active {
+        white-space: nowrap;
+        max-width: fit-content;
         padding: 10px 24px 10px 24px;
         background: #D2A951;
         border-radius: 8px;

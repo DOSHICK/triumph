@@ -225,15 +225,23 @@
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
-        &.list-active{
-          .header__lang-select__block{
+
+        &.list-active {
+          .header__lang-select__block {
             display: flex;
+            align-items: center;
             margin-bottom: 20px;
+            &:hover {
+            background: #c0c0c060;
+          }
           }
         }
-        .header__lang-select__block{
+
+        .header__lang-select__block {
           display: none;
-          &.active{
+          
+
+          &.active {
             display: flex;
             align-items: center;
 
@@ -254,9 +262,7 @@
           transform: translateX(0);
         }
 
-        &:hover {
-          background: #c0c0c060;
-        }
+        
 
         &-img {
           margin: 0px 8px 0px 0px;

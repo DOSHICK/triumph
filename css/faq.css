@@ -609,7 +609,14 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
+}
+
+.header .header__wrapper .header__block_2 .header__lang-select.list-active .header__lang-select__block:hover {
+  background: #c0c0c060;
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select .header__lang-select__block {
@@ -646,10 +653,6 @@ h3 {
   }
 }
 
-.header .header__wrapper .header__block_2 .header__lang-select:hover {
-  background: #c0c0c060;
-}
-
 .header .header__wrapper .header__block_2 .header__lang-select-img {
   margin: 0px 8px 0px 0px;
   width: 24px;
@@ -684,10 +687,22 @@ h3 {
   position: absolute;
   padding: 32px 0px 0px 0px;
   display: block;
-  height: 100vh;
+  height: calc(100vh - 100px);
   width: 100%;
   background: #fff;
   overflow-y: scroll;
+}
+
+@media (max-width: 500px) {
+  .header .burger.active {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (max-width: 400px) {
+  .header .burger.active {
+    height: calc(100vh - 40px);
+  }
 }
 
 .header .burger .burger__wrapper {
@@ -1545,6 +1560,7 @@ h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+  color: #383838;
 }
 
 @media (max-width: 500px) {
