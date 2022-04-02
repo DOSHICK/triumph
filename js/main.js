@@ -1,5 +1,4 @@
 let serviceBtns = document.querySelectorAll(".our-services__btns > button")
-// console.log(btnBlock)
 
 function ChangeActive(){
   for(let index = 0; index < serviceBtns.length; index++){
