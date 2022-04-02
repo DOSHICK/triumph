@@ -36,6 +36,9 @@
     background: none;
     margin-top: 200px;
     padding: 0px 158px 0px 158px;
+    .form__title{
+      color: $white;
+    }
 
     @media (max-width: 1600px) {
       padding: 0px 130px 0px 130px;
