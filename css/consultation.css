@@ -509,20 +509,18 @@ h3 {
 
 .header .header__wrapper .header__block_1 .header__logo-link img.header__logo-img {
   width: 195px;
-  height: 70px;
+  height: 100%;
 }
 
 @media (max-width: 550px) {
   .header .header__wrapper .header__block_1 .header__logo-link img.header__logo-img {
     width: 150px;
-    height: 54px;
   }
 }
 
 @media (max-width: 450px) {
   .header .header__wrapper .header__block_1 .header__logo-link img.header__logo-img {
     width: 120px;
-    height: 32px;
   }
 }
 
@@ -1934,6 +1932,13 @@ h3 {
     -ms-grid-columns: calc(50% - 10px) calc(50% - 10px);
         grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     width: 100%;
+  }
+}
+
+@media (max-width: 1250px) and (max-width: 700px) {
+  .offer .form .form__inputs {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 
