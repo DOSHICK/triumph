@@ -2366,7 +2366,7 @@ h3 {
 
 @media (max-width: 500px) {
   .opportunity .opportunity__absolut-img-block .rectangle-1 {
-    right: -15px;
+    right: 0px;
     top: 100px;
   }
 }
@@ -2385,7 +2385,7 @@ h3 {
 
 @media (max-width: 500px) {
   .opportunity .opportunity__absolut-img-block .rectangle-2 {
-    left: 0px;
+    left: -15px;
     top: 566px;
   }
 }
