@@ -1342,6 +1342,12 @@ h3 {
   background-size: auto;
 }
 
+@media (max-width: 500px) {
+  .principals {
+    padding: 32px 0px 32px 0px;
+  }
+}
+
 .principals .principals__text {
   max-width: 556px;
   border-left: 4px #D2A951 solid;
