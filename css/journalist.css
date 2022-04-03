@@ -1346,6 +1346,7 @@ h3 {
   max-width: 556px;
   border-left: 4px #D2A951 solid;
   padding: 24px 0px 40px 32px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
@@ -2071,6 +2072,12 @@ h3 {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .opportunity {
+    padding-bottom: 0px;
+  }
+}
+
 .opportunity .opportunity__title {
   color: #981717;
   margin: 0px 0px 80px 0px;
@@ -2084,7 +2091,6 @@ h3 {
 
 @media (max-width: 500px) {
   .opportunity .opportunity__title {
-    padding-bottom: 0px;
     margin: 0px 0px 24px 0px;
   }
 }
@@ -2112,8 +2118,10 @@ h3 {
   }
 }
 
-.opportunity .opportunity__block:last-child {
-  margin-bottom: 0;
+@media (max-width: 500px) {
+  .opportunity .opportunity__block {
+    margin-bottom: 30px;
+  }
 }
 
 .opportunity .opportunity__block.reversed {
