@@ -593,14 +593,20 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #ffffff60;
   border-radius: 20px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.header .header__wrapper .header__block_2 .header__lang-select.list-active {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select.list-active .header__lang-select__block {
@@ -611,6 +617,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  background: #c0c0c060;
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select.list-active .header__lang-select__block:hover {
@@ -628,6 +635,10 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (max-width: 1500px) {
@@ -1893,7 +1904,7 @@ h3 {
           align-items: center;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
   .breadcrumbs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1911,12 +1922,18 @@ h3 {
   color: #383838;
   background: none;
   border: none;
-  margin: 0px 32px 0px 0px;
+  margin: 0px 20px 0px 0px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
   .breadcrumbs .breadcrumbs__block .breadcrumbs__btn {
-    margin: 20px 0px 0px 0px;
+    margin: 20px 20px 0px 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .breadcrumbs .breadcrumbs__block .breadcrumbs__btn {
+    margin: 20px 10px 0px 0px;
   }
 }
 
@@ -2212,6 +2229,10 @@ h3 {
   border-radius: 8px;
 }
 
+.facilities .facilities__card:hover .facilities__text {
+  color: #383838;
+}
+
 .facilities .facilities__card:hover .facilities__link img {
   display: block;
 }
@@ -2234,13 +2255,21 @@ h3 {
 }
 
 .facilities .facilities__card .facilities__title {
+  font-family: "Fira Sans", sans-serif;
   margin: 16px 0px 8px 0px;
   color: #830505;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .facilities .facilities__card .facilities__text {
   color: #A6A6A6;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 400px) {
@@ -2251,15 +2280,17 @@ h3 {
 }
 
 .facilities .facilities__card .facilities__link {
+  font-family: "Fira Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 24px 0px 0px 0px;
   color: #D2A951;
-  font-size: 16px;
-  line-height: 19px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @media (max-width: 400px) {
