@@ -82,7 +82,7 @@
   }
 
   @media (max-width:500px) {
-    padding: 0px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
   }
 
   .faq__list {
@@ -94,12 +94,21 @@
       cursor: pointer;
       transition: all 0.3s ease 0s;
 
+      @media (max-width:500px) {
+        border-top: 1px solid #DEDEDE;
+
+      }
+
       &.active {
         background: $white;
         border-top: 2px solid #ffffff;
         box-shadow: 0px 12px 40px rgba(165, 0, 0, 0.2);
         border-radius: 8px;
         margin-bottom: 20px;
+        @media (max-width:500px){
+        border-top: 1px solid #ffffff;
+          
+        }
 
         .faq__header {
           .faq__condition {
