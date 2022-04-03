@@ -313,6 +313,10 @@
     padding-top: 100px;
     padding-bottom: 260px;
   }
+  @media (max-width:500px){
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 
   .facilities__card {
     max-width: 270px;
@@ -342,6 +346,7 @@
 
       .facilities__text {
         color: #383838;
+        font-weight: 700;
       }
 
       .facilities__link {
@@ -384,7 +389,7 @@
 
     .facilities__text {
       color: #A6A6A6;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 14px;
       line-height: 20px;
       transition: all 0.3s ease 0s;

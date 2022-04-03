@@ -144,6 +144,10 @@
     align-items: center;
     margin-bottom: 250px;
 
+    @media (max-width:1025px) {
+      margin-bottom: 50px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -381,7 +385,8 @@
   .more__title {
     color: #981717;
     margin: 0px 0px 40px 0px;
-    @media (max-width:500px){
+
+    @media (max-width:500px) {
       margin: 0px 0px 20px 0px;
     }
   }
