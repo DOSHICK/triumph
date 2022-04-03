@@ -2475,7 +2475,7 @@ h3 {
   }
   .offer .img__block div {
     background: url("../img/main/offer__img-320.png");
-    background-size: cover;
+    background-size: 100% 100%;
     display: block;
   }
 }
