@@ -24,6 +24,12 @@
     background-position: bottom;
   }
 
+  .breadcrumbs {
+    a.breadcrumbs__link {
+      color: #ffffff;
+    }
+  }
+
   .header {
     .header__phone {
       .header__phone-link {
@@ -41,9 +47,10 @@
 
         &.list-active {
           background: none;
+
           .header__lang-select__wrapper {
             background: #FFFFFF60;
-        }
+          }
         }
       }
     }
@@ -92,6 +99,7 @@
           width: 100%;
 
           @media (max-width:500px) {
+            font-weight: 700;
             font-size: 12px;
             line-height: 18px;
             margin-bottom: 24px;
@@ -144,11 +152,5 @@
     .form__text {
       width: auto;
     }
-  }
-}
-
-.breadcrumbs {
-  .breadcrumbs__link {
-    color: #ffffff;
   }
 }

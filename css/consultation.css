@@ -1926,6 +1926,10 @@ h3 {
   }
 }
 
+.offer .breadcrumbs a.breadcrumbs__link {
+  color: #ffffff;
+}
+
 .offer .header .header__phone .header__phone-link {
   color: #FFFFFF;
 }
@@ -2009,6 +2013,7 @@ h3 {
 
 @media (max-width: 1250px) and (max-width: 500px) {
   .offer .form .form__block .form__text {
+    font-weight: 700;
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 24px;
@@ -2067,9 +2072,5 @@ h3 {
 
 .offer .form__block_1 .form__text {
   width: auto;
-}
-
-.breadcrumbs .breadcrumbs__link {
-  color: #ffffff;
 }
 /*# sourceMappingURL=consultation.css.map */
