@@ -1399,22 +1399,8 @@ h3 {
 
 @media (max-width: 520px) {
   .license .license__wrapper .license__list .license__item {
-    width: 180px;
-    height: 250px;
-  }
-}
-
-@media (max-width: 450px) {
-  .license .license__wrapper .license__list .license__item {
-    width: 150px;
-    height: 211px;
-  }
-}
-
-@media (max-width: 400px) {
-  .license .license__wrapper .license__list .license__item {
-    width: 136px;
-    height: 190px;
+    width: 49%;
+    height: 100%;
   }
 }
 
