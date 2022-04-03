@@ -68,6 +68,8 @@
 
 
     .breadcrumbs__btn {
+      font-family: $FontTitle;
+      font-weight: 600;
       font-size: 14px;
       line-height: 17px;
       color: #383838;
@@ -388,7 +390,7 @@
 
     .facilities__text {
       color: #A6A6A6;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       transition: all 0.3s ease 0s;
