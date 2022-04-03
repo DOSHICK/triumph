@@ -28,6 +28,10 @@
       padding-top: 60px;
       padding-bottom: 70px;
     }
+    @media (max-width:500px){
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
 
     .offer__block {
       width: 100%;
