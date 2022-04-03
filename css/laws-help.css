@@ -2144,6 +2144,13 @@ h3 {
   }
 }
 
+@media (max-width: 500px) {
+  .offer .offer__wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
 .offer .offer__wrapper .offer__block {
   width: 100%;
   display: block;
