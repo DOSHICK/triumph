@@ -81,6 +81,9 @@
         $The50persMinusGap: calc(50% - 10px);
         grid-template-columns: $The50persMinusGap $The50persMinusGap;
         width: 100%;
+        @media (max-width:700px){
+          grid-template-columns: auto;
+        }
       }
 
     }
