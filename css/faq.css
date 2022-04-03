@@ -1279,6 +1279,18 @@ h3 {
   margin-top: 70px;
 }
 
+@media (max-width: 900px) {
+  .breadcrumbs {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .breadcrumbs {
+    margin-top: 25px;
+  }
+}
+
 @media (max-width: 500px) {
   .breadcrumbs {
     margin-top: 10px;
@@ -1930,6 +1942,10 @@ h3 {
 }
 
 .offer .offer__block .offer__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
   color: #830505;
   margin: 0px 0px 48px 0px;
 }
@@ -1943,12 +1959,28 @@ h3 {
 @media (max-width: 700px) {
   .offer .offer__block .offer__title {
     margin: 0px 0px 20px 0px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .offer .offer__block .offer__title {
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
 .offer .offer__block .offer__description {
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 500px) {
+  .offer .offer__block .offer__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .offer .offer__img {
