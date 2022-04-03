@@ -1529,8 +1529,8 @@ h3 {
 
 @media (max-width: 500px) {
   .form .form__block_1 .form__text {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -2873,6 +2873,7 @@ h3 {
 
 @media (max-width: 500px) {
   .our-services .our-services__header .our-services__btns {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

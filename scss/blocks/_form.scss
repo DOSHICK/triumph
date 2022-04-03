@@ -34,6 +34,7 @@
     @media (max-width:1400px) {
       margin: 0px 0px 40px 0px;
     }
+
     @media (max-width:500px) {
       margin: 0px 0px 20px 0px;
     }
@@ -45,7 +46,8 @@
       @media (max-width:900px) {
         width: 100%;
       }
-      @media (max-width:500px){
+
+      @media (max-width:500px) {
         margin: 0px 0px 10px 0px;
       }
     }
@@ -62,8 +64,8 @@
       }
 
       @media (max-width:500px) {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 22px;
       }
     }
   }
@@ -93,13 +95,15 @@
         width: 100%;
       }
 
-      .select__block{
+      .select__block {
         position: relative;
+
         select.form__select {
           width: 100%;
           appearance: none;
         }
-        span{
+
+        span {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
