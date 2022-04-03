@@ -2348,6 +2348,14 @@ h3 {
 .principals {
   margin-top: 180px;
   width: 100%;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .principals {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media (max-width: 1050px) {
