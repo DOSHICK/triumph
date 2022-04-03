@@ -448,17 +448,12 @@
     }
 
     .our-services__btns {
-      @media (max-width:500px) {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
+      
       button {
         font-family: $FontTitle;
         font-size: 14px;
         line-height: 17px;
+        font-weight: 600;
         background: none;
         border: none;
         cursor: pointer;
@@ -642,6 +637,9 @@
   .preferences__title {
     color: #981717;
     margin: 0px 0px 40px 0px;
+    @media (max-width:500px){
+      margin: 0px 0px 24px 0px;
+    }
   }
 
   .preferences__wrapper {
@@ -671,6 +669,7 @@
         @media (max-width:500px) {
           font-size: 12px;
           line-height: 18px;
+          margin: 0px 0px 12px 0px;
         }
 
         &::marker {

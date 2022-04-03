@@ -2871,26 +2871,11 @@ h3 {
   }
 }
 
-@media (max-width: 500px) {
-  .our-services .our-services__header .our-services__btns {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .our-services .our-services__header .our-services__btns button {
   font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 600;
   background: none;
   border: none;
   cursor: pointer;
@@ -3140,6 +3125,12 @@ h3 {
   margin: 0px 0px 40px 0px;
 }
 
+@media (max-width: 500px) {
+  .preferences .preferences__title {
+    margin: 0px 0px 24px 0px;
+  }
+}
+
 .preferences .preferences__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3185,6 +3176,7 @@ h3 {
   .preferences .preferences__wrapper .preferences__list .preferrences__item {
     font-size: 12px;
     line-height: 18px;
+    margin: 0px 0px 12px 0px;
   }
 }
 
