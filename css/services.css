@@ -1955,7 +1955,7 @@ h3 {
       flex-wrap: nowrap;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   .breadcrumbs .breadcrumbs__block:last-child {
     margin-top: 20px;
   }
@@ -2029,6 +2029,14 @@ h3 {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
+}
+
+@media (max-width: 500px) {
+  .swiper.search .search__item {
+    background: url("../img/service/slide-bg-500.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
 }
 
 .swiper.search .search__item .search__block {

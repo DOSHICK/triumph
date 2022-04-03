@@ -57,7 +57,7 @@
       flex-direction: row;
       flex-wrap: nowrap;
 
-      @media (max-width:100px) {
+      @media (max-width:1000px) {
         margin-top: 20px;
       }
 
@@ -120,6 +120,11 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
+    @media (max-width:500px){
+      background: url('../img/service/slide-bg-500.svg');
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
 
     .search__block {
       position: relative;
