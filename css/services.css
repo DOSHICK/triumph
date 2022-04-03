@@ -1992,9 +1992,6 @@ h3 {
 @media (max-width: 500px) {
   .breadcrumbs .breadcrumbs__block:last-child {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 

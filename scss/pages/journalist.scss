@@ -148,6 +148,10 @@
     align-items: center;
     margin-bottom: 250px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media (max-width:1025px) {
       margin-bottom: 50px;
     }
@@ -156,7 +160,6 @@
       margin-bottom: 30px;
 
       &:last-child {
-        margin-bottom: 0;
 
         .opportunity__text-block {
           margin-bottom: 30px;

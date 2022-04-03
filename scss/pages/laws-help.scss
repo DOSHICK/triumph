@@ -30,7 +30,8 @@
       padding-top: 60px;
       padding-bottom: 70px;
     }
-    @media (max-width:500px){
+
+    @media (max-width:500px) {
       padding-top: 30px;
       padding-bottom: 20px;
     }
@@ -195,10 +196,12 @@
   margin-top: 180px;
   width: 100%;
   font-weight: 700;
-@media (max-width:500px){
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
+  @media (max-width:500px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   @media (max-width:1050px) {
     margin-top: 40px;
   }
