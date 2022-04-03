@@ -2153,9 +2153,16 @@ h3 {
 }
 
 .offer .offer__wrapper .offer__block {
+  padding-top: 150px;
   width: 100%;
   display: block;
   position: relative;
+}
+
+@media (max-width: 1050px) {
+  .offer .offer__wrapper .offer__block {
+    padding-top: 0px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2187,7 +2194,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin: 32px 0px 56px 0px;
+  margin: 48px 0px 56px 0px;
   max-width: 705px;
 }
 
@@ -2354,7 +2361,7 @@ h3 {
 }
 
 .principals {
-  margin-top: 180px;
+  margin-top: 40px;
   width: 100%;
   font-weight: 700;
 }
