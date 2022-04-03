@@ -577,12 +577,14 @@ h3 {
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: absolute;
   right: -52px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   padding: 8px 8px 8px 8px;
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,11 +619,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
-  background: #c0c0c060;
-}
-
-.header .header__wrapper .header__block_2 .header__lang-select.list-active .header__lang-select__block:hover {
-  background: #c0c0c060;
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select .header__lang-select__block {

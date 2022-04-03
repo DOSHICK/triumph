@@ -210,11 +210,11 @@
       }
 
       .header__lang-select {
+        height: fit-content;
         position: absolute;
         right: -52px;
         transform: translateX(100%);
         padding: 8px 8px 8px 8px;
-        height: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,10 +231,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
-            background: #c0c0c060;
-
             &:hover {
-            background: #c0c0c060;
           }
           }
         }
