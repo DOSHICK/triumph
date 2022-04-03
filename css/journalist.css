@@ -2084,6 +2084,7 @@ h3 {
 
 @media (max-width: 500px) {
   .opportunity .opportunity__title {
+    padding-bottom: 0px;
     margin: 0px 0px 24px 0px;
   }
 }
@@ -2401,6 +2402,16 @@ h3 {
 .more .more__list .more__item {
   list-style-type: disc;
   margin: 0px 0px 24px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 500px) {
+  .more .more__list .more__item {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .more .more__list .more__item a {
