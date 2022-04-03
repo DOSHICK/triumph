@@ -603,6 +603,9 @@ h3 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .header .header__wrapper .header__block_2 .header__lang-select.list-active {
@@ -1988,7 +1991,6 @@ h3 {
 .videos {
   /* Track */
   /* Handle */
-  height: 100vh;
   min-height: 500px;
   position: relative;
   display: -webkit-box;
@@ -2027,6 +2029,12 @@ h3 {
 
 .videos ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
+}
+
+@media (max-width: 500px) {
+  .videos {
+    min-height: 350px;
+  }
 }
 
 .videos .videos__title {
@@ -2144,6 +2152,13 @@ h3 {
   .partners {
     padding-top: 40px;
     padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .partners {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -2447,13 +2462,17 @@ h3 {
   width: 67%;
 }
 
-@media (max-width: 1260px) {
+.offer .img__block img {
+  right: 0;
+}
+
+@media (max-width: 1560px) {
   .offer .img__block {
-    width: 62%;
+    width: 60%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .offer .img__block {
     width: 100%;
   }
@@ -2747,6 +2766,20 @@ h3 {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+@media (max-width: 1000px) {
+  .our-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .our-services .our-services__text {

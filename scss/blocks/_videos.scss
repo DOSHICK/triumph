@@ -1,6 +1,5 @@
 .videos {
   @include scrolled-slider;
-  height: 100vh;
   min-height: 500px;
   position: relative;
   display: flex;
@@ -11,6 +10,9 @@
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width:500px){
+    min-height: 350px
+  }
 
 
   .videos__title {

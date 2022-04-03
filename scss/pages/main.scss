@@ -144,12 +144,16 @@
     top: 0;
     right: 0;
     width: 67%;
-
-    @media (max-width:1260px) {
-      width: 62%;
+    img{
+      right: 0;
     }
 
-    @media (max-width:1200px) {
+    @media (max-width:1560px) {
+      width: 60%;
+    }
+
+
+    @media (max-width:1300px) {
       width: 100%;
 
       div {
@@ -377,6 +381,16 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: auto;
+
+  @media (max-width:1000px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width:500px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   .our-services__text {
     font-size: 16px;

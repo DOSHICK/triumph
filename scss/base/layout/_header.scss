@@ -223,6 +223,8 @@
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
+          background: $white;
+          box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.06));
 
         &.list-active {
           justify-content: unset;

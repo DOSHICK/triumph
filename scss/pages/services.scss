@@ -25,6 +25,10 @@
     max-width: 1140px;
     color: #981717;
     margin: 0px 0px 48px 0px;
+
+    @media (max-width:500px) {
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   .offer__text {
@@ -47,6 +51,23 @@
 
   .breadcrumbs__block {
 
+    &:last-child {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      @media (max-width:100px) {
+        margin-top: 20px;
+      }
+
+      @media (max-width:500px) {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+
     .breadcrumbs__btn {
       font-size: 14px;
       line-height: 17px;
@@ -56,15 +77,21 @@
       margin: 0px 20px 0px 0px;
 
       @media (max-width:1000px) {
-        margin: 20px 20px 0px 0px;
+        margin: 0px 10px 0px 0px;
       }
 
-      @media (max-width:1000px) {
-        margin: 20px 10px 0px 0px;
+      @media (max-width:500px) {
+        font-size: 12px;
+        line-height: 14px;
       }
 
       &:last-child {
-        margin: 0;
+        margin-right: 0;
+        margin: 0px 0px 0px 20px;
+
+        @media (max-width:400px) {
+          margin: 0px 0px 0px 10px;
+        }
       }
 
       &.active {
@@ -72,6 +99,10 @@
         padding: 10px 24px;
         background: #D2A951;
         border-radius: 8px;
+
+        @media (max-width:500px) {
+          padding: 8px;
+        }
       }
     }
   }
@@ -297,17 +328,17 @@
     @media (max-width:610px) {
       max-width: none;
       width: 100%;
-      padding-top: 64px;
-      padding-bottom: 64px;
     }
 
     &:hover {
       border: 1px solid #FFFFFF;
       box-shadow: 0px 12px 40px rgba(165, 0, 0, 0.2);
       border-radius: 8px;
-      .facilities__text{
+
+      .facilities__text {
         color: #383838;
       }
+
       .facilities__link {
         img {
           display: block;
@@ -339,6 +370,11 @@
       font-weight: 800;
       font-size: 16px;
       line-height: 19px;
+
+      @media (max-width:500px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
 
     .facilities__text {
@@ -365,6 +401,7 @@
       line-height: 19px;
 
       @media (max-width:400px) {
+        margin: 16px 0px 0px 0px;
         font-size: 14px;
         line-height: 17px;
       }
