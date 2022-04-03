@@ -2122,6 +2122,12 @@ h3 {
   .opportunity .opportunity__block {
     margin-bottom: 30px;
   }
+  .opportunity .opportunity__block:last-child {
+    margin-bottom: 0;
+  }
+  .opportunity .opportunity__block:last-child .opportunity__text-block {
+    margin-bottom: 30px;
+  }
 }
 
 .opportunity .opportunity__block.reversed {

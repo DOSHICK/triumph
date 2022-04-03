@@ -123,7 +123,8 @@
 .opportunity {
   padding: 100px 0px 50px 0px;
   position: relative;
-  @media (max-width:500px){
+
+  @media (max-width:500px) {
     padding-bottom: 0px;
   }
 
@@ -150,11 +151,19 @@
     @media (max-width:1025px) {
       margin-bottom: 50px;
     }
-    @media (max-width:500px){
+
+    @media (max-width:500px) {
       margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+
+        .opportunity__text-block {
+          margin-bottom: 30px;
+        }
+      }
     }
 
-    
 
     &.reversed {
       flex-direction: row-reverse;
