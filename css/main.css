@@ -2738,20 +2738,18 @@ h3 {
   }
 }
 
-.information .pluses .pluses__block .pluses__list {
-  padding: 0px 0px 0px 40px;
-}
-
-@media (max-width: 500px) {
-  .information .pluses .pluses__block .pluses__list {
-    padding: 0px 0px 0px 30px;
-  }
-}
-
 .information .pluses .pluses__block .pluses__list .pluses__item {
   font-size: 16px;
   line-height: 24px;
   margin: 0px 0px 24px 0px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (max-width: 500px) {
@@ -2766,16 +2764,17 @@ h3 {
   margin: 0;
 }
 
-.information .pluses .pluses__block .pluses__list .pluses__item::marker {
+.information .pluses .pluses__block .pluses__list .pluses__item .pluses__number {
   font-family: "Fira Sans", sans-serif;
   font-weight: 800;
   font-size: 34px;
   line-height: 41px;
   color: #D2A951;
+  margin: 0px 20px 0px 0px;
 }
 
 @media (max-width: 500px) {
-  .information .pluses .pluses__block .pluses__list .pluses__item::marker {
+  .information .pluses .pluses__block .pluses__list .pluses__item .pluses__number {
     font-size: 24px;
     line-height: 29px;
   }
