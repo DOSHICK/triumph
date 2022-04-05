@@ -7,3 +7,4 @@ https://doshick.github.io/triumph/pages/laws-help.html
 https://doshick.github.io/triumph/pages/journalist.html
 https://doshick.github.io/triumph/pages/services_inner.html
 https://doshick.github.io/triumph/pages/services.html
+https://doshick.github.io/triumph/pages/testimonials.html
